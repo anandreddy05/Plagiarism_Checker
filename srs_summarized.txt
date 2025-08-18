@@ -1,0 +1,23 @@
+
+{'summary': '- **Project Title**: Plant Leaf Disease Detection System\n- 
+ **Goal**: To provide an AI-powered solution for early and accurate detection of plant diseases, aiding farmers and agricultural experts in preventing crop losses and promoting sustainable farming practices.\n-
+ **Main Features**: \n  - Disease identification and classification from uploaded leaf images.\n  - Tailored pesticide recommendations based on detected diseases.\n  - Health analysis and insights regarding plant conditions.\n  - User-friendly web interface for easy image uploads and instant results.\n- 
+ **Technologies Used**: The system employs Convolutional Neural Networks (CNNs) for image analysis, with backend support from frameworks like Flask or Django, and utilizes cloud services such as AWS for hosting and processing.\n- 
+ **Unique Aspects**: The system integrates real-time image processing with actionable insights, including purchase links for recommended pesticides, and emphasizes user accessibility through a responsive web design suitable for various devices.', 
+'metadata': {'source_file': 'Plant_leaf_disease_detection.pdf'}}
+
+
+{'summary': '- **Project Title**: Student Project Management System (SPMS)\n- 
+**Goal**: To automate and streamline the management of final-year student projects, enhancing collaboration among students, mentors, and administrators while ensuring originality in submissions.\n- 
+**Main Features**:\n  - Project tracking and milestone management for students and mentors.\n  - Team collaboration tools for task assignment and document sharing.\n  - A Retrieval-Augmented Generation (RAG) chatbot for mentors to query historical project data.\n  - Plagiarism detection using NLP-based similarity checks against a vector database.\n  - Admin management for overseeing project approvals and user roles.\n- 
+**Technologies Used**: \n  - Frontend: Next.js\n  - Backend: Bun, Prisma, PostgreSQL\n  - Vector Database: FAISS or Pinecone\n  - AI Features: LangChain, Hugging Face Transformers\n- 
+**Unique Aspects**: Integration of a natural language processing chatbot for mentor assistance and a robust plagiarism detection mechanism that leverages vector embeddings for accuracy.\n- **User Classes**: The system supports three main user classes: students, mentors, and administrators, each with tailored functionalities and access levels.',
+ 'metadata': {'source_file': 'Project_Management.pdf'}}
+
+
+{'summary': '- **Project Title**: Spam Message Classification on Email Using Machine Learning.\n- 
+**Goal**: To develop a system that accurately classifies and filters spam emails in real-time, reducing the risk of phishing and improving email management efficiency.\n- 
+**Main Features**: \n  - Real-time spam detection using machine learning models.\n  - User feedback integration for continuous improvement of classification accuracy.\n  - Support for multiple email platforms and languages.\n  - Performance reporting and analytics on spam detection.\n- 
+**Technologies Used**: The system utilizes Python, machine learning frameworks such as Scikit-Learn and TensorFlow, and natural language processing (NLP) techniques for text analysis.\n- 
+**Unique Aspects**: The system features automated updates to adapt to evolving spam tactics, minimizes false positives, and provides a user-friendly interface for feedback and performance monitoring.', 
+'metadata': {'source_file': 'Spam_Email_Classification.pdf'}}
