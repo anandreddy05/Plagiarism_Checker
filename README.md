@@ -22,7 +22,7 @@ A FastAPI-based plagiarism detection system specifically designed for Software R
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/anandreddy05/Plagiarism_Checker.git
    cd plagiarism-detection
    ```
 
