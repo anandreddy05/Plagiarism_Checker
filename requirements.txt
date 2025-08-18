@@ -1,0 +1,14 @@
+langchain
+langchain_community
+langchain_chroma
+langchain_pinecone 
+langchain_openai
+langchain_ollama
+python-dotenv
+pymupdf
+pinecone
+ipykernel
+fastapi[standard]
+uvicorn[standard]
+requests
+streamlit
