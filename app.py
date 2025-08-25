@@ -10,14 +10,15 @@ import fitz
 import io
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import JSONResponse
+from pydantic import SecretStr
 
 load_dotenv()
-
 openai_api_key = os.getenv("OPENAI_API")
 pinecone_api_key = os.getenv("PINECONE_API")
 
-model = ChatOpenAI(api_key=openai_api_key, model="gpt-4o-mini",temperature=0)
-embeddings = OpenAIEmbeddings(api_key=openai_api_key, model="text-embedding-3-small")
+model = ChatOpenAI(api_key=SecretStr(openai_api_key) if openai_api_key else None, model="gpt-4o-mini",temperature=0)
+embeddings = OpenAIEmbeddings(api_key=SecretStr(openai_api_key) if openai_api_key else None, model="text-embedding-3-small")
+parser = StrOutputParser()
 parser = StrOutputParser()
 
 prompt = PromptTemplate(
@@ -67,7 +68,6 @@ SRS Text:
 # Vector Store
 pc = Pinecone(api_key=pinecone_api_key)
 
-from pinecone import ServerlessSpec
 
 index_name = "plagiarism-detection" 
 
