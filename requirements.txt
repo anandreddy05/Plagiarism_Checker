@@ -12,3 +12,7 @@ fastapi[standard]
 uvicorn[standard]
 requests
 streamlit
+pytest
+pytest-asyncio 
+httpx 
+reportlab
