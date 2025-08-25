@@ -20,13 +20,13 @@ logger = logging.getLogger(__name__)
 
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API")
-pinecone_api_key = os.getenv("PINECONE_API")
+pinecone_api_key = os.getenv("PINECONE_API_KEY")
 
 # Validate API keys
 if not openai_api_key:
     raise ValueError("OPENAI_API environment variable is required")
 if not pinecone_api_key:
-    raise ValueError("PINECONE_API environment variable is required")
+    raise ValueError("PINECONE_API_KEY environment variable is required")
 
 model = ChatOpenAI(api_key=SecretStr(openai_api_key), model="gpt-4o-mini", temperature=0)
 embeddings = OpenAIEmbeddings(api_key=SecretStr(openai_api_key), model="text-embedding-3-small")
@@ -310,4 +310,4 @@ async def file_too_large_handler(request, exc):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=5000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
